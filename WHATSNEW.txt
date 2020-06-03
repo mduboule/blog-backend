@@ -1,0 +1,16 @@
+- Nouvelle classe "Message" et "MessagesManager" qui permettent de gérer un formulaire
+de contact et d'envoyer des emails automatiquement. Chaque nouveau message est enregistré
+en base de données avant d'être envoyé.
+
+- Fix function getShortPlace($len) in class.concert
+
+- Fix function getListByMonthYear($month, $year) in class.concertsManager 
+  "ORDER BY day ASC" instead of DESC
+  
+- nouvelle attribut 'status' à l'objet concert, permet de modifier l'état d'un concert (activé/désactivé)
+
+- nouvelle fonctions getListToCome() et getFullListToCome() pour obtenir tous les concerts à venir
+en fonction du jour courant dans class.concertsManager
+
+- MAJ des fonctions getListToCome et getFullListToCome et rajout de getPastConcerts() et getFullListPastConcerts()
+(en incluant ou pas les concerts dont le status est off) dans class.concertsManager
